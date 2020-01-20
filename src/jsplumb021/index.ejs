@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习jsplumb</title>
+    <style>
+        .descr {
+            border: 1px solid black;
+            background-color: #d3d4ea;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        #diagramContainer {
+            padding: 20px;
+            width: 80%;
+            height: 500px;
+            border: 1px solid gray;
+            background-color: #b1cbe2;
+            position: relative;
+        }
+
+        .item-group {
+            width: 230px;
+            position: absolute;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .head-item {
+            height: 20px;
+            line-height: 20px;
+            width: 100%;
+            border: 1px solid #000000;
+            padding: 2px 13px;
+            background-color: #9d99be;
+            font-size: 14px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .item {
+            height: 20px;
+            line-height: 20px;
+            width: 100%;
+            border: 1px solid #000000;
+            padding: 2px 13px;
+            background-color: #fff;
+            font-size: 10px;
+        }
+
+        #G1 {
+            left: 20px;
+        }
+
+        #G2 {
+            left: 20px;
+            top: 150px;
+        }
+
+        #G3 {
+            left: 420px;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="descr">
+    本实例内容：学习jsplumb-组<br>
+</div>-->
+<div id="diagramContainer">
+    <div id="G1" class="item-group">
+        <div class="head-item">
+            T_SYS_USER 用户表
+        </div>
+        <div id="A1" class="item">ID 编号 varchar(32)</div>
+        <div id="A2" class="item">USER_CODE 用户code varchar(8)</div>
+        <div id="A3" class="item">USER_NAME 用户名 varchar(20)</div>
+    </div>
+    <div id="G2" class="item-group">
+        <div class="head-item">
+            T_SYS_USER_DETAIL 用户详情
+        </div>
+        <div id="B1" class="item">USER_ID 用户ID varchar(8)</div>
+        <div id="B2" class="item">CNO 工号 varchar(20)</div>
+        <div id="B3" class="item">EMAIL 邮箱 varchar(20)</div>
+        <div id="B4" class="item">TEL 电话号码 varchar(16)</div>
+        <div id="B5" class="item">ADDRESS 地址 varchar(16)</div>
+    </div>
+    <div id="G3" class="item-group">
+        <div class="head-item">
+            T_SYS_USER_2 用户表
+        </div>
+        <div id="C1" class="item">ID 编号 varchar(32)</div>
+        <div id="C2" class="item">USER_CODE 用户code varchar(8)</div>
+        <div id="C3" class="item">USER_NAME 用户名 varchar(20)</div>
+        <div id="C4" class="item">CNO 工号 varchar(20)</div>
+        <div id="C5" class="item">ADDRESS 地址 varchar(16)</div>
+    </div>
+</div>
+</body>
+</html>

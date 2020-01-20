@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习jsplumb</title>
+    <style>
+        .descr {
+            border: 1px solid black;
+            background-color: #d3d4ea;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        #diagramContainer {
+            position: absolute;
+            padding: 20px;
+            width: 80%;
+            height: 400px;
+            border: 1px solid gray;
+        }
+
+        div.item {
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="descr">
+        本实例内容：学习jsplumb-Events <br>
+        <b>sPlumb Events列表</b> <br>
+        <ol>
+            <li>connection</li>
+            <li>connectionDetached</li>
+            <li>connectionMoved</li>
+            <li>click</li>
+            <li>dblclick</li>
+            <li>endpointClick</li>
+            <li>endpointDblClick</li>
+            <li>contextmenu</li>
+            <li>beforeDrop</li>
+            <li>beforeDetach</li>
+            <li>zoom</li>
+            <li>Connection Events</li>
+            <li>Endpoint Events</li>
+            <li>Overlay Events</li>
+            <li>Unbinding Events</li>
+        </ol>
+    </div>
+    <div id="diagramContainer">
+        <div id="item_left" class="item"></div>
+        <div id="item_right" class="item" style="left:150px;"></div>
+    </div>
+</body>
+</html>

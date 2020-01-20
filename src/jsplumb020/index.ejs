@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习jsplumb</title>
+    <style>
+        .descr {
+            border: 1px solid black;
+            background-color: #d3d4ea;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        #diagramContainer {
+            padding: 20px;
+            width: 80%;
+            height: 200px;
+            border: 1px solid gray;
+        }
+
+        .item {
+            height: 80px;
+            width: 80px;
+            border: 1px solid blue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="descr">
+        本实例内容：学习jsplumb-jsPlumb默认配置简介<br>
+        <div>
+            参考地址: http://jsplumb.github.io/jsplumb/defaults.html <br>
+            jsPlumb的配置项有很多，如果你不主动去设置，那么jsPlumb就使用默认的配置。 <br>
+            另外建议你不要修改默认的配置，而是使用自定义的方式。 <br>
+            另外一点要注意，如果你想修改默认配置，那么使用importDefaults方法，并且属性的首字母要大写。如果你用addEndpoint, 并使用类似maxConnections的属性，那么首字母要小写。 <br>
+        </div>
+    </div>
+    <div id="diagramContainer">
+        <div id="item_left" class="item"></div>
+        <div id="item_right" class="item" style="margin-left:50px;"></div>
+        <div id="item_right-2" class="item" style="margin-left:50px;margin-top: 100px"></div>
+    </div>
+</body>
+</html>

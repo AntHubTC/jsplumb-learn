@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习jsplumb</title>
+    <style>
+        .descr {
+            border: 1px solid black;
+            background-color: #d3d4ea;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        #diagramContainer {
+            padding: 20px;
+            width: 80%;
+            height: 200px;
+            border: 1px solid gray;
+        }
+
+        .item {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border: 1px solid blue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="descr">
+        本实例内容：学习jsplumb-节点缩放<br>
+    </div>
+    <div id="diagramContainer">
+        <div id="A" class="item" style="top:50px;left:50px">A</div>
+        <div id="B" class="item" style="top:50px;left:450px">B</div>
+    </div>
+</body>
+</html>
